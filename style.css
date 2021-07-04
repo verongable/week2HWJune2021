@@ -1,0 +1,102 @@
+body {
+    font-family: 'Fredoka One', cursive;
+    margin-bottom: 4%;
+    background-color: #fde7bf;
+}
+
+h1 {
+    text-align: center;
+}
+
+#imageSlider, #imageSlider2 {
+    display: flex;
+}
+
+/*Animated Carousel*/
+
+#window {
+    width: 400px;
+    border: 1px solid;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#imageSlider{
+    transform: translateX(000px);
+    animation: movement 20s infinite;
+}
+
+#imageSlider img {
+    width: 400px;
+}
+
+@keyframes movement {
+    0% {
+        transform: translateX(000px);
+      }
+    10% {
+        transform: translateX(-400px);
+      }
+    20% {
+        transform: translateX(-800px);
+      }
+    30% {
+        transform: translateX(000px);
+      }
+    40% {
+        transform: translateX(-400px);
+      }
+    50% {
+        transform: translateX(-800px);
+      }
+
+}
+
+/*JavaScript Carousel*/
+
+#window2 {
+    width: 400px;
+    height: 320px;
+    border: 1px solid;
+    overflow: hidden;
+    margin: 0 auto;
+    display: block;
+}
+
+#imageSlider2 img {
+    height: 320px;
+    min-width: 100%;
+}
+
+/*Buttons*/
+
+#buttons {
+    position: absolute;
+    margin-top: 1rem;
+}
+
+button {
+    margin: 0 auto;
+}
+
+.prevButton {
+    background: #ffa0a0;
+    border: 1px solid;
+    border-radius: 2px;
+}
+
+.nextButton {
+    background: #8effca;
+    border: 1px solid;
+    border-radius: 2px;
+}
+
+.prevButton, .nextButton {
+    font-size: 13px;
+    padding: .5em;
+    margin-bottom: 10%;
+}
+
+.prevButton:hover, .nextButton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
